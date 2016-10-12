@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,9 +55,6 @@ ul#related-summary li img{height:auto;}}
 <div class='relhead'>
   <h4><span>Artikel Terkait</span></h4>
 <div class='clear'/>
-          <b:loop values='data:post.labels' var='label'>
-               <script expr:src='&quot;data:blog.homepageUrl&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;amp;callback=relpostimgcuplik&amp;amp;max-results=50&quot;' type='text/javascript'/>
-          </b:loop>
           <ul id='related-summary'>
                <script type='text/javascript'>artikelterkait();</script>
           </ul>
