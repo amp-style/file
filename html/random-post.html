@@ -27,78 +27,25 @@ a:hover {color:#000}
 .related-post {margin:0;padding:0;}
 .related-post h4{background:#fafafa;color:#111;border-bottom:1px solid rgba(0,0,0,0.14);border-top:1px solid rgba(0,0,0,0.14);padding:10px 0;font-size:20px;margin:0 0 20px 0;padding-left:8px;line-height:1em}
 .related-post h4 span{padding:6px;display:inline-block;vertical-align:middle}
-.relhead {background:#fff;font-size:100%;font-weight:normal;line-height:150%;overflow:hidden;padding:0;}
-ul#related-summary {margin:0;padding:0 15px;}
-ul#related-summary li{position:relative;float:left;list-style:none outside none;margin:0 5px 15px 5px;padding:0;overflow:hidden;height:180px;width:31.6%}
-ul#related-summary li img{background-color:#f1f1f1;width:100%;height:auto;max-width:100%;margin:0 auto;vertical-align:middle;}
-ul#related-summary li a.relinkjdulx{color:#666;display:block;font-size:12px;font-weight:700;line-height:normal;overflow:hidden;text-align:left;padding:10px 10px 10px 0}
-ul#related-summary li a.relinkjdulx:hover{color:#000;}
-.overlayb {position:relative;max-height:140px;overflow:hidden;}
-.overlayb:before{content:&#39;&#39;;background-color:rgba(0,0,0,0.4);position:absolute;text-align:center;top:0;left:0;right:0;bottom:0;z-index:2;opacity:0;visibility:hidden;transition:all 0.4s linear}
-.overlayb:after{content:&#39;https://1.bp.blogspot.com/-fWM4AIo78Ck/V_5W7rlCahI/AAAAAAAAIFU/ZfHXft45ysQ9oEZIP-ZvCK96RmrgX_nHwCK4B/s400/ic_search_black_24dp_1x.png&#39;;font-size:1.3rem;color:rgba(255,255,255,.8);position:absolute;top:45%;left:45%;text-align:center;z-index:2;opacity:0;visibility:hidden;transition:all 0.20s linear}
-.overlayb:hover:before,.overlayb:hover:after {opacity:1;visibility:visible;}
-#related-summary .news-text{display:none}
+.related-post-style-2 {background:#fff;font-size:100%;font-weight:normal;line-height:150%;overflow:hidden;padding:0;}
+.related-post-style-2  {margin:0;padding:0 15px;}
+.related-post-style-2 li{position:relative;float:left;list-style:none outside none;margin:0 5px 15px 5px;padding:0;overflow:hidden;height:180px;width:31.6%}
+.related-post-style-2 .related-post-item-thumbnail{background-color:#f1f1f1;width:100%;height:auto;max-width:100%;margin:0 auto;vertical-align:middle;}
+.related-post-style-2 .related-post-item-title{color:#666;display:block;font-size:12px;font-weight:700;line-height:normal;overflow:hidden;text-align:left;padding:10px 10px 10px 0}
+.related-post-style-2 .related-post-item-title:hover{color:#000;}
+.related-post-style-2 .related-post-item-summary{display:none}
+.related-post-style-2 .related-post-item-more{display:none;}
 @media only screen and (max-width:640px){
 .related-post h4{margin:0 0 5px;border-bottom:1px solid rgba(0,0,0,0.12)}
-ul#related-summary li{float:left;list-style:none;overflow:hidden;width:50%;padding:10px 0;height:160px;margin:0}
-ul#related-summary li a.relinkjdulx{font-size:12px;font-weight:400;padding:5px 5px 5px 4px}
-ul#related-summary li .overlaytext{float:left;display:inline-block;font-size:12px;font-weight:700;line-height:normal;overflow:hidden;padding:0}
-ul#related-summary li .overlayb{display:inline-block;float:left;height:auto;margin:0 4px}
-ul#related-summary li img{height:auto;}}
+.related-post-style-2 li{float:left;list-style:none;overflow:hidden;width:50%;padding:10px 0;height:160px;margin:0}
+.related-post-style-2 .related-post-item-title{font-size:12px;font-weight:400;padding:5px 5px 5px 4px}
+.related-post-style-2 .related-post-item-thumbnail{height:auto;}}
 /*Related Post Widget End*/
 </style>
-<script type='text/javascript'>function saringtags(r,l){for(var e=r.split("<"),n=0;n<e.length;n++)-1!=e[n].indexOf(">")&&(e[n]=e[n].substring(e[n].indexOf(">")+1,e[n].length));return e=e.join(""),e=e.substring(0,l-1)}function relpostimgcuplik(r){for(var l=0;l<r.feed.entry.length;l++){var e=r.feed.entry[l];reljudul[relnojudul]=e.title.$t,postcontent="","content"in e?postcontent=e.content.$t:"summary"in e&&(postcontent=e.summary.$t),relcuplikan[relnojudul]=saringtags(postcontent,numchars),"media$thumbnail"in e?postimg=e.media$thumbnail.url:postimg="http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s1600/grey.GIF",relgambar[relnojudul]=postimg;for(var n=0;n<e.link.length;n++)if("alternate"==e.link[n].rel){relurls[relnojudul]=e.link[n].href;break}relnojudul++}}function contains(r,l){for(var e=0;e<r.length;e++)if(r[e]==l)return!0;return!1}function artikelterkait(){for(var r=new Array(0),l=new Array(0),e=new Array(0),n=new Array(0),t=0;t<relurls.length;t++)contains(r,relurls[t])||(r.length+=1,r[r.length-1]=relurls[t],l.length+=1,l[l.length-1]=reljudul[t],e.length+=1,e[e.length-1]=relcuplikan[t],n.length+=1,n[n.length-1]=relgambar[t]);reljudul=l,relurls=r,relcuplikan=e,relgambar=n;for(var t=0;t<reljudul.length;t++){var a=Math.floor((reljudul.length-1)*Math.random()),u=reljudul[t],i=relurls[t],o=relcuplikan[t],s=relgambar[t];reljudul[t]=reljudul[a],relurls[t]=relurls[a],relcuplikan[t]=relcuplikan[a],relgambar[t]=relgambar[a],reljudul[a]=u,relurls[a]=i,relcuplikan[a]=o,relgambar[a]=s}for(var g,m=0,d=Math.floor((reljudul.length-1)*Math.random()),c=d,h=document.URL;relmaxtampil>m&&(relurls[d]==h||(g="<li class='news-title clearfix'>",g+="<a href='"+relurls[d]+"' rel='nofollow' target='_top' title='"+reljudul[d]+"'><div class='overlayb'><img src='"+relgambar[d]+"' /></div></a>",g+="<div class='overlaytext'><a class='relinkjdulx' href='"+relurls[d]+"' target='_top'>"+reljudul[d]+"</a></div>",g+="<span class='news-text'>"+relcuplikan[d]+"</span>",g+="</li>",document.write(g),m++,m!=relmaxtampil))&&(d<reljudul.length-1?d++:d=0,d!=c););}var relnojudul=0,relmaxtampil=6,numchars=90,reljudul=new Array,relurls=new Array,relcuplikan=new Array,relgambar=new Array;</script>
 </head>
 <body>
 <div id="related-post" class="related-post"></div>
-  <ul id='related-summary'/>
-<script>
-function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i=0;i<vars.length;i++) {
-    var pair = vars[i].split("=");
-    if(pair[0] == variable){return pair[1];}
-  }
-  return(false);
-}
-var labelArray = [],
-    relatedPostConfig = {
-		homePage: getQueryVariable("url"),
-        numPosts: 20,
-        summaryLength: 100,
-        widgetStyle: 2,
-        callBack: function() {
-            var $container = $('#' + this.containerId + ' > ul'),
-                $list = $container.find('li'),
-                innerHeight = $list.first().height(),
-                outerHeight = $list.first().outerHeight(true);
-            // Container & list height setup
-            $container.css({
-                "height": outerHeight * $list.length / 2,
-                "overflow": "hidden"
-            });
-            $list.css({
-                "height": innerHeight,
-                "overflow": "hidden"
-            });
-            // Animation
-            function newsTicker() {
-                window.setTimeout(function() {
-                    $container.find('li:last').stop().animate({
-                        opacity: 0
-                    }, 1000, function() {
-                        $(this).hide().prependTo($container).slideDown(1000, function() {
-                            $(this).stop().animate({
-                                opacity: 1
-                            }, 1000, newsTicker);
-                        });
-                    });
-                }, 3000);
-            } newsTicker();
-        }
-    };
-</script>
+
 <script>
 /*! Related Post Widget for Blogger by Taufik Nurrohman => http://gplus.to/tovic */
 var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>You Might Also Like:</h4>",widgetStyle:1,homePage:"http://www.kompiajaib.com/",numPosts:7,summaryLength:370,titleLength:"auto",thumbnailSize:200,noImage:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAA3NCSVQICAjb4U/gAAAADElEQVQImWOor68HAAL+AX7vOF2TAAAAAElFTkSuQmCC",containerId:"related-post",newTabLink:false,moreText:"Baca Selengkapnya",callBack:function(){}};for(var f in relatedPostConfig){d[f]=(relatedPostConfig[f]=="undefined")?d[f]:relatedPostConfig[f]}var j=function(a){var b=m.createElement("script");b.type="text/javascript";b.src=a;k.appendChild(b)},o=function(b,a){return Math.floor(Math.random()*(a-b+1))+b},l=function(a){var p=a.length,c,b;if(p===0){return false}while(--p){c=Math.floor(Math.random()*(p+1));b=a[p];a[p]=a[c];a[c]=b}return a},e=(typeof labelArray=="object"&&labelArray.length>0)?"/-/"+l(labelArray)[0]:"",h=function(b){var c=b.feed.openSearch$totalResults.$t-d.numPosts,a=o(1,(c>0?c:1));j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+d.numPosts+"&callback=showRelatedPost")},g=function(z){var s=document.getElementById(d.containerId),x=l(z.feed.entry),A=d.widgetStyle,c=d.widgetTitle+'<ul class="related-post-style-'+A+'">',b=d.newTabLink?' target="_blank"':"",y='<span style="display:block;clear:both;"></span>',v,t,w,r,u;if(!s){return}for(var q=0;q<d.numPosts;q++){if(q==x.length){break}t=x[q].title.$t;w=(d.titleLength!=="auto"&&d.titleLength<t.length)?t.substring(0,d.titleLength)+"&hellip;":t;r=("media$thumbnail"in x[q]&&d.thumbnailSize!==false)?x[q].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, "/s"+d.thumbnailSize):d.noImage;u=("summary"in x[q]&&d.summaryLength>0)?x[q].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,d.summaryLength)+"&hellip;":"";for(var p=0,a=x[q].link.length;p<a;p++){v=(x[q].link[p].rel=="alternate")?x[q].link[p].href:"#"}if(A==2){c+='<li><a href="'+v+'" title="'+t+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"></a><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+'</a><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+'</span> <a href="'+v+'" class="related-post-item-more"'+b+">"+d.moreText+"</a></span>"+y+"</li>"}else{if(A==3||A==4){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-title" href="'+v+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"></a><div class="related-post-item-tooltip"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+"</a></div>"+y+"</li>"}else{if(A==5){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-wrapper" href="'+v+'" title="'+t+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><span class="related-post-item-tooltip">'+w+"</span></a>"+y+"</li>"}else{if(A==6){c+='<li><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+'</a><div class="related-post-item-tooltip"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+"</span></span>"+y+"</div></li>"}else{c+='<li><a title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+"</a></li>"}}}}}s.innerHTML=c+="</ul>"+y;d.callBack()};randomRelatedIndex=h;showRelatedPost=g;j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")})(window,document,document.getElementsByTagName("head")[0]);
