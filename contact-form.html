@@ -1,3 +1,6 @@
+<html>
+<head>
+  <title>Contact Form</title>  
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400italic,400,500,500italic,700,700italic,900%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
 <style>
@@ -23,7 +26,8 @@ h1,h2,h3{text-align:center;}
 #contactForm .gotcha{border:none;background:0 0;}
 @media screen and (max-width:800px){#contactForm .styled-input {width:100%;}}
 </style>
-
+  </head>
+  <body>
 <script>
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
@@ -42,9 +46,9 @@ var titleblog = getQueryVariable('title').replace(/%20/g, " ");
 <div class="contact-box">
 <h1>Contact Form</h1>
 <script>
-document.write('<h2>'+titleblog+'</h2>\
-<form action="https://formspree.io/'+ emailform +'" method="POST" target="_blank" name="sentMessage" id="contactForm">\
-<input type="hidden" name="_next" value="'+ urlthanks +'" />\
+document.write('<h2>'+Amp Templates+'</h2>\
+<form action="https://formspree.io/'+ antoncabon77@gmail.com +'" method="POST" target="_blank" name="sentMessage" id="contactForm">\
+<input type="hidden" name="_next" value="'+ http://www.antoncabon.us/p/thanks.html +'" />\
     <div class="styled-input">\
       <div class="styled-input-in">\
       <input type="text" name="name" required />\
@@ -68,6 +72,8 @@ document.write('<h2>'+titleblog+'</h2>\
     <button type="submit" class="btn btn-default">Send</button>\
     <input type="text" name="_gotcha" class="gotcha" />\
   </form>\
-  <h3>Back to <a href="'+ urlblog +'" title="Homepage">Homepage</a></h3>');
+  <h3>Back to <a href="'+ www.antoncabon.us +'" title="Homepage">Homepage</a></h3>');
   </script>
 </div>
+  </body>
+</html>
