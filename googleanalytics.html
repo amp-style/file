@@ -42,6 +42,24 @@
   <span id="event-test" class="box">
     Click here to generate an event
   </span>
-
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-85438695-1"
+  },
+  "triggers": {
+    "trackPageviewWithCustomUrl": {
+      "on": "visible",
+      "request": "pageview",
+      "vars": {
+        "title": "My page",
+        "documentLocation": "https://amptemplates.blogspot.com"
+      }
+    }
+  }
+}
+</script>
+</amp-analytics>
   </body>
 </html>
