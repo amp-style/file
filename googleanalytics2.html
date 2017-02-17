@@ -1,0 +1,65 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AMP Analytics</title>
+    <link rel="canonical" href="https://amptemplates.blogspot.com" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-analytics"
+        src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+
+  <amp-analytics type="googleanalytics">
+  <script type="application/json">
+  {
+    "vars": {
+      "account": "UA-85438695-1"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      },
+      "trackEvent": {
+        "selector": "#event-test",
+        "on": "click",
+        "request": "event",
+        "vars": {
+          "eventCategory": "ui-components",
+          "eventAction": "click"
+        }
+      }
+    }
+  }
+  </script>
+  </amp-analytics>
+
+  <h1 id="header">AMP Page</h1>
+
+  <span id="event-test" class="box">
+    Click here to generate an event
+  </span>
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-85438695-1"
+  },
+  "triggers": {
+    "trackPageviewWithCustomUrl": {
+      "on": "visible",
+      "request": "pageview",
+      "vars": {
+        "title": "My page",
+        "documentLocation": "https://amptemplates.blogspot.com"
+      }
+    }
+  }
+}
+</script>
+</amp-analytics>
+  </body>
+</html>
